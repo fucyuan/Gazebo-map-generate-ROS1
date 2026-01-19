@@ -74,6 +74,18 @@ The `generate_map.sh` script provides a one-click solution for map generation.
 ./generate_map.sh src/gazebo_map_creator/kongdi.world -25 -25 -3 25 25 10 0.1 maps/kongdi_map
 ```
 
+脚本行为：
+- 启动前清理旧的 Gazebo 进程
+- 等待 `save_map` 服务
+- 显示估算进度（可通过 `EST_STEPS_PER_SEC` 调整）
+- 结束后自动关闭 Gazebo
+
+进度估算调优：
+
+```bash
+EST_STEPS_PER_SEC=380000 ./generate_map.sh
+```
+
 #### Parameters
 
 | Argument | Description | Default |
