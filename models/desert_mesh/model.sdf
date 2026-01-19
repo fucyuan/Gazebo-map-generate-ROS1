@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="desert_mesh">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://desert_mesh/meshes/terrain.dae</uri>
+            <scale>3 3 3</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://desert_mesh/materials/scripts</uri>
+            <uri>model://desert_mesh/materials/textures</uri>
+            <name>Desert/Sand</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://desert_mesh/meshes/terrain.dae</uri>
+            <scale>3 3 3</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

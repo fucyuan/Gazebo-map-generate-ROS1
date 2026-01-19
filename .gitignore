@@ -1,0 +1,32 @@
+# 编译输出
+build/
+devel/
+*.pyc
+__pycache__/
+
+# 生成的地图文件
+*.pcd
+*.pgm
+*.yaml
+*.png
+*.bt
+map/
+kongdi_map*
+test_map*
+
+# Gazebo缓存
+.gazebo/
+
+# ROS日志
+.log/
+rosout/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+.DS_Store

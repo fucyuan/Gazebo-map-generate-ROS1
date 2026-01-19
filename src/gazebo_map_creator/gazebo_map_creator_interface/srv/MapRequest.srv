@@ -1,0 +1,14 @@
+# Define constants
+uint8 MAP_2D=0
+uint8 MAP_3D=1
+
+# Request to send for map creation
+geometry_msgs/Point   lowerright
+geometry_msgs/Point   upperleft
+uint8                 skip_vertical_scan     # 0: 2D (fast), 1: full scan
+float64               resolution             # smaller the value, higher the resolution
+float64               range_multiplier       # distance multiplier for neighbour collision checks
+int32                 threshold_2d
+string                filename
+---
+bool success 
