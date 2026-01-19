@@ -2,7 +2,8 @@
 
 从 Gazebo 世界生成 2D/3D 地图的 ROS 插件与脚本工具。
 
-注：本项目思路借鉴自 https://github.com/arshadlab/gazebo_map_creator.git（其为 ROS 2 实现）。
+注：本项目思路借鉴自 https://github.com/arshadlab/gazebo_map_creator.git
+（其为 ROS 2 实现）。
 
 ## 功能概览
 
